@@ -1,8 +1,14 @@
+#include<iostream>
+using namespace std ;
+
 class Item {
 private:
-    std::string nom, type; // type = "HEAL"
-    int valeur, quantite;
+    string nom;
+    string type;
+    int valeur;
+    int quantite;
 public:
     void utiliser(class Joueur& j);
     bool estDisponible() const;
 };
+
