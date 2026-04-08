@@ -25,9 +25,12 @@ bool Monstre:: peutEtreEpargne()
 }
 void Monstre::subirDegats(int d)
 {
-    if()
+    if(hp_actuel-d >0)
     {
         hp_actuel -= d;
+    }
+    else{
+        hp_actuel = 0;
     }
 }
 void Monstre::modifierMercy(int delta)
