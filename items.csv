@@ -1,0 +1,11 @@
+nom;type;valeur;quantite
+Potion;HEAL;15;3
+Super Potion;HEAL;30;1
+Snack;HEAL;8;5
+Elixir de vie;HEAL_MAX;10;1
+Bouclier magique;SHIELD;1;2
+Armure temporaire;DEF_UP;5;2
+Brise-garde;DEF_DOWN;3;2
+Potion de force;ATK_UP;5;1
+Bomb arcanique;DAMAGE;20;1
+Totem sacre;REVIVE;1;1

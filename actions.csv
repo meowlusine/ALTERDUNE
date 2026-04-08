@@ -1,0 +1,18 @@
+nom;effet;texte
+COMPLIMENT;10;Cela faisait longtemps qu'on ne m'avait pas dit quelque chose d'aussi gentil.
+DISCUSS;10;Hmm, tu marques un point... je n'avais pas vu les choses sous cet angle.
+OBSERVE;5;Tu me fixes avec attention... c'est un peu genant mais plutot flatteur.
+PET;15;Oh... personne ne m'avait caresse depuis des siecles. Continue.
+OFFER_SNACK;20;Un snack ? Pour moi ? Tu sais parler a un monstre affame.
+REASON;15;Tes arguments sont... etrangement convaincants. Je t'ecoute.
+DANCE;10;Tes pas sont ridicules, mais c'est tellement drole que j'oublie pourquoi on se bat.
+JOKE;10;Ha ! Pas mal celle-la. J'avoue, j'ai souffle du nez.
+INSULT;-20;J'en connais un qui vient de signer son arret de mort.
+THREAT;-15;Tu oses me menacer ? Tu vas regretter chaque mot.
+SING;10;C'est faux, mais l'intention y est. Ca me touche un peu quand meme.
+HUG;20;Lache-moi immediatement. ... Non attends, reste encore un peu.
+FLIRT;5;Oh... tu... c'est tres soudain. Je ne sais plus ou me mettre.
+IGNORE;-5;Surtout fais comme si j'existais pas, ca me rend pas du tout furieux.
+FLEX;-10;Wow, t'es muscle, bravo. Ca me donne surtout envie de te frapper plus fort.
+MOCK;-15;Continue a te moquer. Chaque rire te coutera cher.
+PRAY;15;Ta priere est entendue, jeune chevalier. Ma colere s'apaise.
