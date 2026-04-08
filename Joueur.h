@@ -26,33 +26,21 @@ public:
     Item*[] getInventaire(){ return inventaire; }
     EntreeBestiaire*[] getBestiaire(){ return bestiaire; }
 
-
-    void setNom(string n)   { nom = n; }
-    void setHpMax(int v) { if (v > 0) hp_max = v; }
-    void setHpActuel(int v) {
-        if(v < 0){
-            hp_actuel = 0;
-        }
-        else if (v > hp_max){
-            hp_actuel = hp_max;
-        }
-        else{
-            hp_actuel = v;
-        }
-    }
-
-    // modif des attributs
-    void incrementerVictoires()  { nb_victoires++; }
-    void incrementerTues()       { nb_tues++; }
-    void incrementerEpargnes()   { nb_epargnes++; }
-
-    void ajouterItem(Item& item){ inventaire.push_back(item); }
-    void ajouterEntreeBestiaire(EntreeBestiaire& e) { bestiaire.push_back(e); }
-
-    bool estVivant(){ return hp_actuel > 0; }
-    bool aGagne(){ return nb_victoires >= 10; }
+    bool estVivant();
+    void setNom(string n);
+    void setHpMax(int v);
+    void setHpActuel(int v);
+    void incrementerVictoires();
+    void incrementerTues();
+    void incrementerEpargnes();
+    void ajouterItem(Item& item);
+    void ajouterEntreeBestiaire(EntreeBestiaire& e);
+    bool aGagne();
+    string getFin();
 
     void utiliserItem(int index);
-    void afficherStats() const;
-    string getFin() const; // "GENOCIDAIRE" / "PACIFISTE" / "NEUTRE"
+    void afficherStats();
+    void tour_joueur(Monstre& m);
+
+
 };
