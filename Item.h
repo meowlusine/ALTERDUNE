@@ -7,8 +7,21 @@ private:
     string type;
     int valeur;
     int quantite;
-public:
-    void utiliser(class Joueur& j);
-    bool estDisponible() const;
-};
 
+public:
+
+    // getters et setters
+    string getNom(){ return nom; }
+    string getType() { return type; }
+    int getValeur() { return valeur; }
+    int getQuantite(){ return quantite; }
+    void setNom(string n);
+    void setType(string t);
+    void setValeur(int v);
+    void setQuantite(int q);
+
+
+    bool estDisponible();
+    void utiliser(Joueur& j);
+
+};

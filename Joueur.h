@@ -38,7 +38,7 @@ public:
     bool aGagne();
     string getFin();
 
-    void utiliserItem(int index);
+    void utiliserItem(Iint id);
     void afficherStats();
     void tour_joueur(Monstre& m);
 
