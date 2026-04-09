@@ -1,4 +1,13 @@
+#ifndef ITEM_H
+#define ITEM_H
+
 #include<iostream>
+#include <string>
+#include "Item.h"
+
+class Joueur;
+
+
 using namespace std ;
 
 class Item {
@@ -10,6 +19,7 @@ private:
 
 public:
 
+    Item(string nom, string type,int valeur, int quantite);
     // getters et setters
     string getNom(){ return nom; }
     string getType() { return type; }
@@ -25,3 +35,5 @@ public:
     void utiliser(Joueur& j);
 
 };
+
+#endif

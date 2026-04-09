@@ -1,5 +1,10 @@
-#include<iostream>
-using namespace std ;
+#ifndef JOUEUR_H
+#define JOUEUR_H
+#include <iostream>
+#include <string>
+#include <vector>
+#include "Item.h"
+#include "EntreeBestiaire.h"
 
 class Joueur {
 
@@ -10,10 +15,12 @@ private:
     int nb_victoires;
     int nb_tues;
     int nb_epargnes;
-    Item*[] inventaire;
-    EntreeBestiaire*[] bestiaire;
+    vector<Item> inventaire;
+    vector<EntreeBestiaire> bestiaire;
 
 public:
+
+    Joueur(string nom,int hp_max, int nb_victoires,int nb_tues, int nb_epargnes);
 
     //getters et setters
 
@@ -23,8 +30,8 @@ public:
     int getNbVictoires(){ return nb_victoires; }
     int getNbTues(){ return nb_tues; }
     int getNbEpargnes(){ return nb_epargnes; }
-    Item*[] getInventaire(){ return inventaire; }
-    EntreeBestiaire*[] getBestiaire(){ return bestiaire; }
+    vector<Item> getInventaire(){ return inventaire; }
+    vector<EntreeBestiaire> getBestiaire(){ return bestiaire; }
 
     bool estVivant();
     void setNom(string n);
@@ -38,9 +45,10 @@ public:
     bool aGagne();
     string getFin();
 
-    void utiliserItem(Iint id);
+    void utiliserItem(int id);
     void afficherStats();
-    void tour_joueur(Monstre& m);
 
 
 };
+
+#endif
