@@ -55,10 +55,10 @@ string Joueur::getFin(){
     return "NEUTRE";
 }
 
-void Joueur::utiliserItem(int id){
-    if (id >= 0 && id < (int)inventaire.size()){
-        if(inventaire[id].estDisponible()){
-            inventaire[id].utiliser(*this);
+void Joueur::utiliserItem(int index){
+    if (index >= 0 && index < (int)inventaire.size()){
+        if(inventaire[index].estDisponible()){
+            inventaire[index].utiliser(*this);
         }
     }
 }
