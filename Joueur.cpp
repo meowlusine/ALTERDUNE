@@ -98,7 +98,7 @@ void testerJoueur() {
     assert(j.getHpMax() == 200);            // valeur négative ignorée
 
     // --- setNom ---
-    // CORRECTION : setNom("") n'est PAS ignoré dans ta version (pas de garde)
+
     // donc on teste juste qu'un nom valide est bien assigné
     j.setNom("Chara");
     assert(j.getNom() == "Chara");          // setNom valide fonctionne
@@ -136,7 +136,7 @@ void testerJoueur() {
     assert(j7.getFin() == "NEUTRE");        // les deux → neutre
 
     // --- utiliserItem ---
-    // CORRECTION : utiliserItem prend (int, Monstre&) dans ta version
+
     // on crée un monstre bidon pour les tests
     Joueur j8("Soigne", 100, 0, 0, 0);
     j8.setHpActuel(50);
